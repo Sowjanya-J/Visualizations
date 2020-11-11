@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import mpld3
+from mpld3 import plugins
+
+fig, ax = plt.subplots()
+l = ['Accomodation','Foodbeverage','Shopping','Entertainment' ,'Others']
+Tourism2019 = [1256,588,1371,1457,1929]
+Tourism2020 = [862,376,656,858,278]
+
+plt.plot([],[], color='m', label='Tourism 2019')
+plt.plot([],[], color='c', label='Tourism 2020')
+ax.grid(False, linestyle=':', alpha = 0.6)
+
+area = plt.stackplot(l, Tourism2019, Tourism2020, colors=['m','c'])
+
+plt.xlabel('Activities',labelpad= 8,color = "#808080")
+plt.ylabel('Amount Spent im SGD',color = "#808080")
+plt.title('Breakdown of Tourism Reciepts\n',color = "#808080", size=20)
+plt.xticks(np.arange(5) + 0.001, ('Accomodation','Foodbeverage','Shopping','Entertainment' ,'Others'))
+plt.legend()
+plt.show()
+mpld3.show()
+newhtml3 = mpld3.fig_to_html(fig)
