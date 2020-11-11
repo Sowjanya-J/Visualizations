@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import mpld3
+from mpld3 import plugins
+
+N=10
+fig, ax = plt.subplots(subplot_kw=dict(''))
+y1 = [53,235,99,239,29,64,59,22,37,9]
+y2 = [283882,255908,149019,101221,91923,60353,57561,42910,41185,23251]
+country = ["China","Indonesia","India","Malaysia","Australia","Japan","USA","South Korea","United Kingdom","Germany"]
+plt.plot([],[],color='green', label='Q2 2019', linewidth=5) 
+plt.plot([],[],color='blue', label='Q2 2020', linewidth=5) 
+
+scatter = ax.stackplot(country, y2,y1, alpha=0.5, colors=['green','blue'])
+ax.grid(color='white', linestyle=':')
+
+ax.set_title("Inbound Tourism Statistics", size=20)
+
+labels = ['{0}'.format(i) for i in country]
+tooltip = mpld3.plugins.PointLabelTooltip(scatter, labels=labels)
+plugins.connect(fig,tooltip)
+newhtml = mpld3.fig_to_html(fig)
