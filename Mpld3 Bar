@@ -1,0 +1,28 @@
+import numpy as np
+import mpld3
+from mpld3 import plugins
+import matplotlib.pyplot as plt
+import pandas as pd
+
+dataset = pd.read_csv("Flights.csv")
+passenger2019 =  dataset['2019-passenger']
+passenger2020 =  dataset['2020-passenger']
+
+N = 9
+ind = np.arange(N)
+width = 0.3
+fig, ax = plt.subplots()
+ax.grid(False, linestyle=':', alpha=0.5)
+plt.bar(ind, passenger2019 , width, label='2019', color = '#F3B489')
+plt.bar(ind + width, passenger2020, width, label='2020', color = "#041A60")
+
+plt.xticks(ind + width / 2, ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'))
+
+plt.xlabel('2019/2020', labelpad=8, color = "#808080")
+plt.ylabel('Passenger Totals (x1000)', color = "#808080")
+plt.title('2019/2020\nPassenger Details', size = 20, color = "#808080")
+
+plt.legend(loc='best')
+plt.show()
+
+newhtmlpassenger = mpld3.fig_to_html(fig)
