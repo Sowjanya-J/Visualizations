@@ -1,0 +1,195 @@
+			body { 
+				
+				width: auto;
+				Height: 100%;
+				background-color:white;				
+				overflow:auto;
+				margin-top: 0px;
+				margin-left: 0px;
+				margin-right:0px;
+				margin-bottom:0px;
+			}
+				
+			.Top {		
+				width: 250px;
+				height: 250px;
+				border-collapse: separate;
+				border-radius: 8px;
+				top:240px;
+				margin-right: 50px;
+				margin-left: 50px;
+				overflow:auto;
+				display:inline-block;
+				font-family:calibri;
+				background-color: rgba(230,237,240,0.5);
+				vertical-align: middle;
+			}
+			
+			.result {
+				position: relative;
+				width: auto;
+				height:auto;			
+			}
+			
+			.navigation {
+				vertical-align: middle;	
+				align:center;
+			}
+			
+			.button {
+				  
+				padding: 8px 12px;
+				font-size: 18px;
+				top:520px;
+				text-align: center;
+				cursor: pointer;
+				outline: none;
+				color: #fff;
+				background-color: blue;
+				border: none;
+				border-radius: 10px;
+				box-shadow: 0 5px #999;
+				vertical-align:middle;
+			}
+
+			.button:hover {background-color: rgba(255,223,0,0.8);}
+			
+			.button:focus{ background-color:rgba(255,223,0,0.8);}
+
+			.button:active {
+				background-color: rgba(255,223,0,0.8);
+				box-shadow: 0 2px #666;
+				transform: translateY(4px);
+			}
+			
+			#scatter {
+			position: absolute;
+			left: 200px;
+			top:250px;
+			background-color: rgba(230,237,240,0.5);
+			border-radius: 8px;
+			width: 500px;
+			font-family:calibri;
+			}
+			
+			#scatter-text {
+			position: absolute;
+			text-align: left-side;
+			font-family:calibri;
+			color:gray;
+			left: 700px;
+			top:250px;
+			background-color: rgba(230,237,240,0.5);
+			width: 400px;
+			height: 292px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius: 8px;
+			border-radius: 8px;
+			}
+			
+			#areaplot {
+			position: absolute;
+			left: 200px;
+			top:600px;
+			background-color: rgba(230,237,240,0.5);
+			border-radius: 8px;
+			width: 500px;
+			font-family:calibri;
+			}
+			
+			#areaplot-text {
+			position: absolute;
+			text-align: left-side;
+			font-family:calibri;
+			color:gray;
+			left: 700px;
+			top:600px;
+			background-color: rgba(230,237,240,0.5);
+			width: 400px;
+			height: 292px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius: 8px;
+			border-radius: 8px;
+			}
+			#flightline{
+			position: absolute;
+			left: 200px;
+			top:250px;
+			background-color: rgba(230,237,240,0.5);
+			border-radius: 8px;
+			width: 500px;
+			font-family:calibri;
+		}
+		#flightline-text {
+			position: absolute;
+			text-align: left-side;
+			font-family:calibri;
+			color:gray;
+			left: 700px;
+			top:250px;
+			background-color: rgba(230,237,240,0.5);
+			width: 400px;
+			height: 292px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius: 8px;
+			border-radius: 8px;
+		}
+		#passengerbar {
+			position: absolute;
+			left: 200px;
+			top:600px;
+			background-color: rgba(230,237,240,0.5);
+			border-radius: 8px;
+			width: 500px;
+			font-family:calibri;
+		}
+		#passengerbar-text {
+			position: absolute;
+			text-align: left-side;
+			font-family:calibri;
+			color:gray;
+			left: 700px;
+			top:600px;
+			background-color: rgba(230,237,240,0.5);
+			width: 400px;
+			height: 292px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius: 8px;
+			border-radius: 8px;
+		}
+			#forecastbar {
+			position: absolute;
+			left: 200px;
+			top:250px;
+			background-color: rgba(230,237,240,0.5);
+			border-radius: 8px;
+			width: 500px;
+			font-family:calibri;
+			}
+			#forecastbar-text {
+				position: absolute;
+				text-align: left-side;
+				font-family:calibri;
+				color:gray;
+				left: 700px;
+				top:250px;
+				background-color: rgba(230,237,240,0.5);
+				width: 400px;
+				height: 292px;
+				padding-left:20px;
+				padding-right:20px;
+				border-radius: 8px;
+				border-radius: 8px;
+			}
+
+			.title {
+		      text-align: center;
+		      background: url(images/background2.png) no-repeat;
+		      background-position: top;		     
+			  background-size: contain;
+		      opacity: 1;			  
+			}
